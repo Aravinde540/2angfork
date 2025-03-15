@@ -11,8 +11,6 @@ import { ViewChild } from '@angular/core';
 export class AppComponent {
   x = '';
   @ViewChild(ComicComponent) child!: ComicComponent;
-  ngAfterViewInit() {
-    this.x = this.child.name;
-  }
+   
 
 }
