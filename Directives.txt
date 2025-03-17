@@ -1,0 +1,47 @@
+Directives are used to manipulate the DOM(Document object model) like making an element disappear, applying certain styles based on user actions, creating or deleting elements dynamically. These directives controls the behaviour of elements
+  Directives are three types
+  i. structural Directives 
+  ii. property Directives
+  iii. custom Directives
+
+  i. structural Directives: These Directives are used to manipulate the structure of elements . There are three structural Directives named as
+     a. ngIf
+     b. ngSwitch
+     c. ngFor
+
+     a. ngIf: ngIf is a structural Directive used to toggle a certain element. 
+     ngIf will check a condition and if the condition is true , it will executes its block of element else it executes else block if it exists
+
+     simple if:
+          <div *ngIf="isShow">
+             <h2 class=" text-white">Hello world</h2>
+          </div>
+    if-else:
+         <div *ngIf="isSigned else loginElse">
+            <h2>Welcome to Prasad!</h2>
+         </div>
+         <ng-template #loginElse>
+            <h2>Please login</h2>
+         </ng-template>
+    
+    ngSwitch: when we have multiple conditions to verify, instead of using if else if ladder, we can use ngSwitch.
+<select [(ngModel)]="user">
+  <option value="parent">parent</option>
+  <option value="admin">admin</option>
+  <option value="student">student</option>
+</select>
+<div [ngSwitch]="user">
+     <h1 *ngSwitchCase="'admin'"> welcome to admin</h1>
+     <h1 *ngSwitchCase="'parent'"> welcome to parent</h1>
+     <h1 *ngSwitchCase="'student'"> welcome to student</h1>
+    <h1 *ngDefaultCase>Please enter proper value</h1>
+</div>
+
+
+
+
+
+
+
+
+

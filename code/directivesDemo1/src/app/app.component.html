@@ -1,0 +1,28 @@
+<button (click)="fun()" class=" p-5 rounded-3xl bg-black text-2xl text-white">click me</button>
+<div *ngIf="isShow" class="absolute top-2/6 left-2/6 h-60 w-60 bg-amber-400 text-3xl text-white">
+  <button (click)="fun()">X</button>
+  <h2 class=" text-white">Hello world</h2>
+</div>
+
+
+<!-- ngIf else-->
+
+<div *ngIf="isSigned else loginElse">
+    <h2>Welcome to Prasad!</h2>
+</div>
+<ng-template #loginElse>
+  <h2>Please login</h2>
+</ng-template>
+<select [(ngModel)]="user">
+  <option value="parent">parent</option>
+  <option value="admin">admin</option>
+  <option value="student">student</option>
+</select>
+<div [ngSwitch]="user">
+     <h1 *ngSwitchCase="'admin'"> welcome to admin</h1>
+     <h1 *ngSwitchCase="'parent'"> welcome to parent</h1>
+     <h1 *ngSwitchCase="'student'"> welcome to student</h1>
+    <h1 *ngDefaultCase>Please enter proper value</h1>
+
+</div>
+
