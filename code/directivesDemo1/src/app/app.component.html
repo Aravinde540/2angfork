@@ -1,12 +1,12 @@
-<button (click)="fun()" class=" p-5 rounded-3xl bg-black text-2xl text-white">click me</button>
+<!-- <button (click)="fun()" class=" p-5 rounded-3xl bg-black text-2xl text-white">click me</button>
 <div *ngIf="isShow" class="absolute top-2/6 left-2/6 h-60 w-60 bg-amber-400 text-3xl text-white">
   <button (click)="fun()">X</button>
   <h2 class=" text-white">Hello world</h2>
 </div>
 
 
-<!-- ngIf else-->
-
+ ngIf else-->
+<!-- 
 <div *ngIf="isSigned else loginElse">
     <h2>Welcome to Prasad!</h2>
 </div>
@@ -24,5 +24,33 @@
      <h1 *ngSwitchCase="'student'"> welcome to student</h1>
     <h1 *ngDefaultCase>Please enter proper value</h1>
 
+</div> --> 
+
+
+
+<!-- ng for -->
+
+<!-- <p>RAJ</p>
+<p>PRASAD</p>
+<p>SANTHOSH</p>
+<p>MANU</p>
+<p>vani</p> -->
+
+<div>
+   <p *ngFor="let x of arr;let i=index">{{x}}{{i}}</p>
 </div>
+<div>
+  <p *ngFor= "let m of arr2">Name:-{{m.name}}  Role:-{{m.role}} </p>
+</div>
+<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div *ngFor="let m of movies">
+    <img [src]="m.link" alt={{m.title}} height="200">
+    <h2>{{m.title}}</h2>
+  </div>
+</div>
+
+
+
+
+
 

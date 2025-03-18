@@ -37,7 +37,11 @@ Directives are used to manipulate the DOM(Document object model) like making an 
     <h1 *ngDefaultCase>Please enter proper value</h1>
 </div>
 
+ngFor:  ngFor is also a structural Directives which is used  for repetitive UI based on a condition
 
+<element *ngFor="let x of array">
+  //code
+</element>
 
 
 
