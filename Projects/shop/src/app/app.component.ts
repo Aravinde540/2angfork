@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  isDark = false
+  changeMode() {
+    if(this.isDark)
+      this.isDark = false
+    else
+      this.isDark=true
+  }
   products = [
     {
       id: 1,
