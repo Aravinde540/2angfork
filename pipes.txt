@@ -27,3 +27,23 @@ There are two types of pipes:
      To create our own pipe, we can use command : ng generate pipe pipe-name
      it creates pipename.pipe.ts and spec files
      In pipe file, pipetransform generates a transform method which we can define how ever we want. A pipe must return a value
+     ng g p evenOdd
+   it will create evenOdd.pipe.ts
+     export function evenOdd extends pipeTransform{
+       transform(value:number){
+          if(value%2==0){
+            return "even"
+          }
+          else{
+            return "odd
+          }
+       }
+     }
+
+     //HTML
+     25|evenOdd
+
+
+
+
+
