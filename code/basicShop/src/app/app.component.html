@@ -1,0 +1,17 @@
+<header>
+    <h2>SHOP</h2>
+</header>
+<main>
+     <div class=" m-auto max-w-5xl products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="product p-5 shadow-gray-400 hover:shadow-blue-500" *ngFor="let p of products">
+           <img src={{p.image}} alt={{p.title}} height="200">
+           <h2>{{p.title}}</h2>
+           <p>Category: <span>{{p.category}}</span></p>
+           <p>Price: {{p.price|currency:"INR"}}</p>
+           <button>Add to Cart</button>
+        </div>
+     </div>
+</main>
+<footer> 
+    <h2>This is the footer</h2>
+</footer>
