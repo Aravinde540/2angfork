@@ -13,6 +13,15 @@ How to use service?
   e. use the service
 
 
+#API#
+Application programming Interface is used to connect frontend and backend of programming/Application.
+it is also used for integrating 3rd party Application
+To deal with API's Angular have a default service called httpClient.
+httpClient requires a module called httpClientModule
 
+step 1. import httpClientModule in app module
+step 2: Inject httpclient service and call methods like get,post,put,delete etc..,
+step3: httpClient methods return observable which is series of asynchronous operations
+step 4: observables need to be subscribed to get the result
 
 

@@ -1,0 +1,27 @@
+<!-- <div >
+  <h2>{{q.quote}}</h2>
+  <p>{{q.author}}</p>
+</div> -->
+
+<div class="relative h-screen">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+  </div>
+  
+  <!-- Hero Content -->
+  <div class="relative z-10 flex h-full flex-col items-center justify-center px-4">
+   <div>
+  <div class="data flex flex-col" *ngFor="let o of data">
+    <p class=" text-3xl ">{{o.user}}</p>
+    <p class=" text-2xl">{{o.bot}}</p>
+  </div>
+  <div class="input">
+    <input type="text" placeholder="Enter the text"
+     [(ngModel)]="inp" [value]="inp" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+     <button (click)="sendToAPI()" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">send</button>
+  </div>
+</div>
+  </div>
+</div>
+
