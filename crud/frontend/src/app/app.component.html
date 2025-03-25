@@ -1,0 +1,13 @@
+<h1>WELCOME CRUD</h1>
+<div>
+   <input type="text" placeholder="Enter movie name" [(ngModel)]="mname" class=" text-3xl border border-2 border-amber-500">
+   <input type="text" placeholder="Enter movieURL" [(ngModel)]="murl" class=" text-3xl border border-2 border-amber-500">
+   <button (click)="addMovie()">add movie</button>
+</div>
+<div class="max-h-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+   <div class=" p-2 rounded-2xl flex justify-center items-center flex-col shadow-2xl shadow-blue-400 hover:scale-110" *ngFor="let m of movies">
+      <img src={{m.img}} alt={{m.name}} class=" h-2/4">
+      <h2>{{m.name}}</h2>
+      <button class=" p-3 bg-red-400 text-2xl text-white text-center rounded-2xl hover:bg-red-600" (click)="remove(m.id)">delete</button>
+   </div>
+</div>
