@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+body{
+    height: 100vh;
+    background-image:linear-gradient(145deg,pink
+    ,white,white,white,white,pink,white
+    );
+}
