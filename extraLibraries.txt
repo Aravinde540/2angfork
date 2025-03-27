@@ -16,3 +16,23 @@
 add Extension Tailwind CSS IntelliSense
 Tailwind Labs
 tailwindcss.com
+2. Angular create special library using bootstrap called "ng-bootstrap"
+i.    ng add @ng-bootstrap/ng-bootstrap and npm install bootstrap
+ii. In styles.css, @import url('path to bootstrap.min.css)
+
+
+
+npm install bootstrap-icons
+include in style.css as import url
+
+
+https://github.com/emmabostian/developer-portfolios
+
+
+
+
+
+
+
+
+
