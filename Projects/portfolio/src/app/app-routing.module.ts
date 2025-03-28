@@ -5,13 +5,24 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SingleprojectComponent } from './pages/singleproject/singleproject.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
+  {
+    path: 'about',
+    component: AboutComponent,
+    children: [
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'contact', component: ContactComponent },
+    ],
+  },
+  {
+    path: 'projects', component: ProjectsComponent
+  },
+    { path: 'projects/:pno', component:SingleprojectComponent},
   { path: 'contact', component: ContactComponent },
-  {path:'**',component:NotFoundComponent}
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

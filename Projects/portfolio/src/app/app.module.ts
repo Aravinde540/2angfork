@@ -11,6 +11,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SingleprojectComponent } from './pages/singleproject/singleproject.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SingleprojectComponent
   ],
   imports: [
     BrowserModule,

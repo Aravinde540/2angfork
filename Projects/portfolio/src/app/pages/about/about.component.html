@@ -1,1 +1,17 @@
-<p>about works!</p>
+<section class=" d-flex justify-content-center align-content-center" style="height: 100vh;">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div>
+      <img src="favicon.ico" alt="">
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat in officiis nobis, repudiandae asperiores sint libero facere itaque omnis?</p>
+    </div>
+   <div class=" border border-2 border-black" style="width: 50vw;height: 40vh;">
+      <div class="border border-2 border-black flex gap-2">
+          <button><a routerLink="projects">projects</a></button>
+    <button><a routerLink="contact">contact</a></button>
+      </div>
+    <router-outlet />
+   </div>
+  </div>
+</section>

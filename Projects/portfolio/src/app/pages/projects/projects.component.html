@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<div class="container projects">
+   <div class="project d-flex flex-column justify-content-center align-items-center" *ngFor="let p of projects_data">
+     <h2 class=" fs-2">{{p.title}}</h2>
+     <p class=" fs-3 text-secondary">{{p.description}}</p>
+     <div class="buttons d-flex gap-2">
+        <button class=" btn-primary">see Live</button>
+        <button class=" btn-outline-primary"><a routerLink="/projects/{{p.id}}">see details</a></button>
+        <button class=" btn-outline-primary">Github</button>
+     </div>
+   </div>
+</div>
