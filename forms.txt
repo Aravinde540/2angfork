@@ -1,0 +1,15 @@
+Forms are used to collect users data. Angular handles the forms in two ways
+  i. template forms: these forms are created using template code(html).
+  ii. reactive forms : these form are created using component code(ts), also called component forms
+
+  i. Template Driven Forms:
+   Every form element like input,buttons etc.., are instances of formControl. formControl instances contains properties like pristine,dirty,valid,invalid,required etc..,
+   These forms supports two way data binding using ngModel directive
+   To handle inputs and forms we use formControl and formGroup
+
+   touched: true when user click atleast once on that input(select)
+   unTouched: true when user doesn;t click/select the input
+   pristine: true when user did not changed previous value
+   dirty: true when user  changed the previous value
+   valid: true when there are no errors fo rinput validation
+   invalid: true when there are errors

@@ -65,6 +65,7 @@ export class ProjectsDataService {
     "highlight": false,
     "creative_aspect": "Developed engaging game mechanics and visual feedback within the Angular application to motivate learners. Designed a user-friendly interface that seamlessly integrates learning content with gamified elements."
   }
-];
+  ];
+  isSignin = false;
   constructor() { }
 }

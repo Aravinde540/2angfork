@@ -12,5 +12,7 @@ projects_data:any=[]
   constructor(public d:ProjectsDataService) {
    this.projects_data=this.d.pdata
  }
-
+  fun() {
+  this.d.isSignin=true
+}
 }

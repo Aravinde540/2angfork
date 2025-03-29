@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  fun(x:any) {
+    console.log(x)
+  }
 }

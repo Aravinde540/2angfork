@@ -1,1 +1,11 @@
-<p>contact works!</p>
+<form>
+   <input type="text" name="na" minlength="6" #bujji="ngModel" ngModel  required >
+ <div *ngIf="(bujji.touched && bujji?.errors?.['required']) || (bujji.untouched && bujji.invalid)">
+   <p class="text-danger">please enter a value</p>
+ </div>
+ <p *ngIf="(bujji.touched && bujji?.errors?.['minlength'])" class=" text-danger">
+    Please enter minimum 6 characters
+ </p>
+      <button (click)="fun(bujji)">click me</button>
+
+</form>

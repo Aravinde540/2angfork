@@ -6,6 +6,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SingleprojectComponent } from './pages/singleproject/singleproject.component';
+import { checkoutGuard } from './guards/checkout.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +21,7 @@ const routes: Routes = [
   {
     path: 'projects', component: ProjectsComponent
   },
-    { path: 'projects/:pno', component:SingleprojectComponent},
+    { path: 'projects/:pno', component:SingleprojectComponent, canActivate:[checkoutGuard]},
   { path: 'contact', component: ContactComponent },
   { path: '**', component: NotFoundComponent },
 ];

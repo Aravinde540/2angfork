@@ -19,7 +19,7 @@ course Topics:
             ii. ngSwitch
             iii. ngFor
              iv. ngClass & ngStyle
-             v. custom
+             v. custom directive
     x. pipes
             i. default pipes
             ii. custom pipes
