@@ -1,0 +1,9 @@
+<form action="">
+    <input type="text" name="name" placeholder="Enter Name" ngModel #na="ngModel" minlength="6" required><br>
+    <p *ngIf="na?.touched&&na?.errors?.['required']" class="error">Name is required</p>
+    <p *ngIf="na?.touched && na?.errors?.['minlength']" class="error"> Enter minimum 6 characters </p>
+    <br>
+    <input type="email" name="email" placeholder="Enter Email" ngModel #em="ngModel"><br><br>
+    <input type="password" name="pswrd" placeholder="Enter Password" ngModel #pwd="ngModel"><br><br>
+    <button>Submit</button>
+</form>

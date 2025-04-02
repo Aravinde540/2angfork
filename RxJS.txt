@@ -1,0 +1,31 @@
+RxJS:RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+In RxJS, three things are very important
+  i. observable
+  2. subjects
+  3. operators
+
+  Observable: observables are used to connect multiple promises sequentially
+  observable are different from promises, they return data everytime and promises does it once.
+
+  syntax: element.observable.subscribe((res)=>console.log("success"),
+  (error)=>console.log("error"),
+  (complete)=>console.log("completed))
+
+
+operators: There are so many default functions provided by RxJS . Those Default functions are called operators
+Eg: forEach,map,filter,of,subscribe etc..,
+
+subjects: subjects are multi projected observables. it is used to channel single data to multiple observers.There are 4 kinds of subjects available
+  i. Basic Subject: 
+         it is used for multicasting without any default value
+         const sub= new Subject()
+  ii. Behaviour Subject:
+         it is used for multicasting with default value
+         const sub = new BehaviourSubject(defaultvalue)
+  iii. ReplaySubject: 
+          it is used for multicasting and recasting
+          const sub= new ReplaySubject(size) 
+  iv. AsyncSubject:
+          it is used for multicasting asynchronously
+          const sub= new AsyncSubject()
+          

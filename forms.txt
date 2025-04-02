@@ -13,3 +13,12 @@ Forms are used to collect users data. Angular handles the forms in two ways
    dirty: true when user  changed the previous value
    valid: true when there are no errors fo rinput validation
    invalid: true when there are errors
+   errors: it contains all the errors as a array
+
+
+   Reactive Forms/Component-Driven Forms:
+   These forms are used for dynamic form elements. They use TS instead of HTML code.
+   FormGroup - creates a form group that contains form controls
+   FormControl - creates a form Control that can be used to track the value and validatity of input element.
+   Validators: provides a set of built in validators that can used to validate the form.
+   FormControlName: binds a form control to a form Group

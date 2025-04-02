@@ -1,0 +1,16 @@
+Git: Git is a distributed version control system software. it needs to be downloaded by oracle
+you can install and verify using "git -v" in command prompt
+basic git commands:
+1. git init
+2. git add .
+3. git commit -m "message"
+
+for first time == > git config -- global user.name "username"
+git config --global user.email "urEmailId"
+
+Github: it is a website done by microsoft. it is used ti share,collaborate,deploy the codes
+goto github.com  and signup,login
+
+github create a repository
+In terminal --> git remote add origin "path to directory"
+git push -u origin main/master
