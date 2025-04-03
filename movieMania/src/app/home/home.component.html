@@ -1,0 +1,9 @@
+<h2 class="">Popular Movies</h2>
+
+<div class="movies grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="movie p-4 rounded-2xl flex flex-col justify-center items-center gap-5 shadow shadow-amber-200 h-max" *ngFor="let i of popularMovies ">
+        <img src="https://image.tmdb.org/t/p/w500/{{i.poster_path}}" alt="{{i.title}}" class=" h-96 object-cover">
+        <h2 class=" text-2xl font-bold">{{i.title}}</h2>
+        <p class=" text-justify ">{{i.overview}}</p>
+    </div>
+</div>
